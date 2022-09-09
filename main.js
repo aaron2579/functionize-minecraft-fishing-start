@@ -28,9 +28,7 @@ function fishBtnClicked() {
     // STEVE: Cod 70%, Salmon 20%, Tropical 5%, Puffer 5%
     let randNum = Math.random();
     if (randNum < 0.7) {
-      numCod++;
-      numCodSpan.innerHTML = numCod;
-      resultImg.src = 'img/Raw-Cod.png';
+      setMinecraft("cod", "cod", "Raw-Cod")
     } else if (randNum < 0.9) {
       numSalmon++;
       numSalmonSpan.innerHTML = numSalmon;
@@ -65,4 +63,10 @@ function fishBtnClicked() {
       resultImg.src = 'img/Pufferfish.png';
     }
   }
+}
+
+function setMinecraft(fish, numFish, fishImg) {
+  `num${fish}++` 
+  `num${fish}Span.innerHTML` = numFish;
+  resultImg.src = `img/${fishImg}.png`;
 }
