@@ -25,11 +25,11 @@ function fishBtnClicked() {
 
   // Catch fish based on character
   if (character === 'steve') {
-    catchFish("0.7", "0.9", "0.95")
+    catchFish(0.7, 0.9, 0.95)
   } else if (character === 'alex') {
-   catchFish("0.1", "0.2", "0.5")
+   catchFish(0.1, 0.2, 0.5)
   } else {
-    catchFish("0.25", "0.5", "0.75")
+    catchFish(0.25, 0.5, 0.75)
   }
 }
 
